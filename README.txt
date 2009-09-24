@@ -12,6 +12,11 @@ compliant regexp matching library.
 
 == EXAMPLES:
 
+== REQUIREMENTS:
+
+* {tre}[http://laurikari.net/tre/]
+* {ffi}[http://rubyforge.org/projects/ffi/] >= 0.4.0
+
 == INSTALL:
 
   $ sudo gem install tre-ffi
