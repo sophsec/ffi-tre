@@ -1,0 +1,8 @@
+History.txt
+Manifest.txt
+Rakefile
+README.txt
+lib/tre-ffi.rb
+lib/tre-ffi/typedefs.rb
+lib/tre-ffi/version.rb
+lib/tre-ffi/ffi.rb
