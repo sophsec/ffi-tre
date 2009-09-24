@@ -14,7 +14,7 @@ compliant regexp matching library.
 
 == REQUIREMENTS:
 
-* {tre}[http://laurikari.net/tre/]
+* {tre}[http://laurikari.net/tre/] >= 0.8.0
 * {ffi}[http://rubyforge.org/projects/ffi/] >= 0.4.0
 
 == INSTALL:
