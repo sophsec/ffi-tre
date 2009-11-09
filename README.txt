@@ -1,6 +1,6 @@
-= TRE FFI
+= ffi-tre
 
-* http://github.com/sophsec/tre-ffi/
+* http://github.com/sophsec/ffi-tre/
 * Postmodern (postmodern.mod3 at gmail.com)
 
 == DESCRIPTION:
@@ -19,7 +19,7 @@ compliant regexp matching library.
 
 == INSTALL:
 
-  $ sudo gem install tre-ffi
+  $ sudo gem install ffi-tre
 
 == LICENSE:
 
