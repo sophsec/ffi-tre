@@ -1,5 +1,3 @@
-require 'tre-ffi/typedefs'
-
 require 'ffi'
 
 module FFI

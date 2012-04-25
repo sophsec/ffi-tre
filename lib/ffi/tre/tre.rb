@@ -1,6 +1,5 @@
-require 'tre-ffi/typedefs'
-require 'tre-ffi/reg_aprox_params'
-require 'tre-ffi/reg_aprox_match'
+require 'ffi/tre/reg_aprox_params'
+require 'ffi/tre/reg_aprox_match'
 
 require 'ffi'
 
@@ -53,7 +52,7 @@ module FFI
       attach_function :tre_regwcomp, [:pointer, :pointer, :int], :int
       attach_function :tre_regwncomp, [:pointer, :pointer, :size_t, :int], :int
     rescue FFI::NotFoundError
-      STDERR.puts "warning: libtre was not compiled with wchar support"
+      warn "Warning: libtre was not compiled with wchar support"
     end
 
     begin
@@ -64,12 +63,12 @@ module FFI
         attach_function :tre_regawexec, [:pointer, :pointer, :pointer, RegAproxParams, :int], :int
         attach_function :tre_regawnexec, [:pointer, :pointer, :size_t, :pointer, RegAproxParams, :int], :int
       rescue FFI::NotFoundError
-        STDERR.puts "warning: libtre was not compiled with wchar support"
+        warn "Warning: libtre was not compiled with wchar support"
       end
 
       attach_function :tre_regaparams_default, [:pointer], :void
     rescue FFI::NotFoundError
-      STDERR.puts "warning: libtre was not compiled with approximate matching support"
+      warn "Warning: libtre was not compiled with approximate matching support"
     end
   end
 end
