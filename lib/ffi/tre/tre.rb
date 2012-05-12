@@ -7,7 +7,7 @@ module FFI
   module TRE
     extend FFI::Library
 
-    ffi_lib 'tre'
+    ffi_lib ['tre', 'libtre.so.5']
 
     enum :reg_errcode, [
       :reg_ok,
